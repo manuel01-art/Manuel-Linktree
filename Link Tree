@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I miei script Python</title>
+  <style>
+    /* Reset e box‑sizing */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* Corpo nero, font sans‑serif */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    /* Contenitore centrale */
+    .container {
+      width: 100%;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Titolo */
+    .title {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    /* Stile dei pulsanti */
+    .btn {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background-color: #fff;
+      color: #000;
+      padding: 14px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: opacity 0.2s ease, transform 0.1s ease;
+    }
+    .btn:hover {
+      opacity: 0.8;
+      transform: translateY(-1px);
+    }
+    .btn:active {
+      opacity: 0.6;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">I miei script Python</h1>
+
+    <!-- Sostituisci href con i nomi dei tuoi file reali -->
+    <a href="script1.py" download class="btn">Script 1</a>
+    <a href="script2.py" download class="btn">Script 2</a>
+    <a href="script3.py" download class="btn">Script 3</a>
+    <a href="script4.py" download class="btn">Script 4</a>
+    <a href="script5.py" download class="btn">Script 5</a>
+  </div>
+</body>
+</html>
