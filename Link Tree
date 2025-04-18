@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>I miei script Python</title>
   <style>
-    /* Reset e box‑sizing */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    /* Corpo nero, font sans‑serif */
     body {
       background-color: #000;
       color: #fff;
@@ -19,8 +16,6 @@
       justify-content: center;
       padding: 20px;
     }
-
-    /* Contenitore centrale */
     .container {
       width: 100%;
       max-width: 360px;
@@ -28,15 +23,11 @@
       flex-direction: column;
       gap: 12px;
     }
-
-    /* Titolo */
     .title {
       text-align: center;
       font-size: 1.5rem;
       margin-bottom: 8px;
     }
-
-    /* Stile dei pulsanti */
     .btn {
       display: block;
       text-align: center;
@@ -59,17 +50,54 @@
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <h1 class="title">I miei script Python</h1>
 
-    <!-- Sostituisci href con i nomi dei tuoi file reali -->
-    <a href="script1.py" download class="btn">Script 1</a>
-    <a href="script2.py" download class="btn">Script 2</a>
-    <a href="script3.py" download class="btn">Script 3</a>
-    <a href="script4.py" download class="btn">Script 4</a>
-    <a href="script5.py" download class="btn">Script 5</a>
+    <!-- Script 1 -->
+    <a
+      href="https://colab.research.google.com/drive/1GBrdkLMJbTB-igFO5E6o8X7286pwUDJ5?usp=sharing"
+      target="_blank"
+      class="btn"
+    >
+      Recommended System
+    </a>
+
+    <!-- Script 2 -->
+    <a
+      href="https://www.canva.com/design/DAGXN72keco/asGfHGA7_roeikfbKI1hYA/edit?utm_content=DAGXN72keco&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+      target="_blank"
+      class="btn"
+    >
+      Progetto Web Marketing
+    </a>
+
+    <!-- Script 3 -->
+    <a
+      href="https://colab.research.google.com/drive/10e7ptQnvKSrWJIS2vahLVbTHUT9yqbzh?usp=sharing"
+      target="_blank"
+      class="btn"
+    >
+      News Scraping
+    </a>
+
+    <!-- Script 4 -->
+    <a
+      href="https://colab.research.google.com/drive/1g52s0Nukmx_AhPxmsSpBRVJHz5Hzb1Xw?usp=sharing"
+      target="_blank"
+      class="btn"
+    >
+      Restaurant Management System
+    </a>
+
+    <!-- Script 5 -->
+    <a
+      href="https://colab.research.google.com/drive/1kC1WTmvflR6J2kzAscBIffPy0fW6Jrzb?usp=sharing"
+      target="_blank"
+      class="btn"
+    >
+      Financial Data Extraction System
+    </a>
   </div>
 </body>
 </html>
