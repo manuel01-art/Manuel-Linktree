@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>I miei script Python</title>
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -39,6 +39,7 @@
       font-size: 1rem;
       font-weight: 500;
       transition: opacity 0.2s ease, transform 0.1s ease;
+      cursor: pointer;
     }
     .btn:hover {
       opacity: 0.8;
@@ -48,56 +49,81 @@
       opacity: 0.6;
       transform: translateY(0);
     }
+    .hidden {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1 class="title">I miei script Python</h1>
 
-    <!-- Script 1 -->
-    <a
-      href="https://colab.research.google.com/drive/1GBrdkLMJbTB-igFO5E6o8X7286pwUDJ5?usp=sharing"
-      target="_blank"
-      class="btn"
-    >
-      Recommended System
-    </a>
+    <!-- Link principali -->
+    <div id="main-links">
+      <a href="https://colab.research.google.com/drive/1GBrdkLMJbTB-igFO5E6o8X7286pwUDJ5?usp=sharing" target="_blank" class="btn">Recommended System</a>
+      <a href="https://www.canva.com/design/DAGXN72keco/asGfHGA7_roeikfbKI1hYA/edit?utm_content=DAGXN72keco&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn">Progetto Web Marketing</a>
+      <a href="https://colab.research.google.com/drive/10e7ptQnvKSrWJIS2vahLVbTHUT9yqbzh?usp=sharing" target="_blank" class="btn">News Scraping</a>
+      <a href="https://colab.research.google.com/drive/1g52s0Nukmx_AhPxmsSpBRVJHz5Hzb1Xw?usp=sharing" target="_blank" class="btn">Restaurant Management System</a>
+      <a href="https://colab.research.google.com/drive/1kC1WTmvflR6J2kzAscBIffPy0fW6Jrzb?usp=sharing" target="_blank" class="btn">Financial Data Extraction System</a>
+      <button class="btn" onclick="showRegionale()">Business Plan - Regionale</button>
+      <button class="btn" onclick="showDacia()">Business Plan - Dacia Bigster</button>
+    </div>
 
-    <!-- Script 2 -->
-    <a
-      href="https://www.canva.com/design/DAGXN72keco/asGfHGA7_roeikfbKI1hYA/edit?utm_content=DAGXN72keco&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-      target="_blank"
-      class="btn"
-    >
-      Progetto Web Marketing
-    </a>
+    <!-- Sottolink Regionale -->
+    <div id="regionale-links" class="hidden">
+      <h2 class="title">Regionale</h2>
+      <a
+        href="https://www.canva.com/design/DAGqLAuqOVQ/qUOpCq-P6JzugZ2n6Ysm6g/edit?utm_content=DAGqLAuqOVQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        target="_blank"
+        class="btn"
+      >
+        Business Plan (PDF)
+      </a>
+      <a
+        href="https://docs.google.com/spreadsheets/d/1jKv_LxKH1bccRaTzIKfdLzu0zYNocjxIN5O8WfAwitg/edit?usp=sharing"
+        target="_blank"
+        class="btn"
+      >
+        File Excel
+      </a>
+      <button class="btn" onclick="goBack()">⬅ Torna indietro</button>
+    </div>
 
-    <!-- Script 3 -->
-    <a
-      href="https://colab.research.google.com/drive/10e7ptQnvKSrWJIS2vahLVbTHUT9yqbzh?usp=sharing"
-      target="_blank"
-      class="btn"
-    >
-      News Scraping
-    </a>
-
-    <!-- Script 4 -->
-    <a
-      href="https://colab.research.google.com/drive/1g52s0Nukmx_AhPxmsSpBRVJHz5Hzb1Xw?usp=sharing"
-      target="_blank"
-      class="btn"
-    >
-      Restaurant Management System
-    </a>
-
-    <!-- Script 5 -->
-    <a
-      href="https://colab.research.google.com/drive/1kC1WTmvflR6J2kzAscBIffPy0fW6Jrzb?usp=sharing"
-      target="_blank"
-      class="btn"
-    >
-      Financial Data Extraction System
-    </a>
+    <!-- Sottolink Dacia Bigster -->
+    <div id="dacia-links" class="hidden">
+      <h2 class="title">Dacia Bigster</h2>
+      <a
+        href="https://www.canva.com/design/DAGoMwPR7E8/sAAsY7x65dmlobt9uFAWhQ/edit?utm_content=DAGoMwPR7E8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        target="_blank"
+        class="btn"
+      >
+        Business Plan (PDF)
+      </a>
+      <a
+        href="https://docs.google.com/spreadsheets/d/1r62PvnoRhGzN4e24IrknbAXmpUkScojOFVTy6eTyLyk/edit?usp=sharing"
+        target="_blank"
+        class="btn"
+      >
+        File Excel
+      </a>
+      <button class="btn" onclick="goBack()">⬅ Torna indietro</button>
+    </div>
   </div>
+
+  <script>
+    function showRegionale() {
+      document.getElementById('main-links').classList.add('hidden');
+      document.getElementById('regionale-links').classList.remove('hidden');
+    }
+    function showDacia() {
+      document.getElementById('main-links').classList.add('hidden');
+      document.getElementById('dacia-links').classList.remove('hidden');
+    }
+    function goBack() {
+      document.getElementById('regionale-links').classList.add('hidden');
+      document.getElementById('dacia-links').classList.add('hidden');
+      document.getElementById('main-links').classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
