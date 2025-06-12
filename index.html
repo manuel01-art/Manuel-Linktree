@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>I miei script Python</title>
   <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       background-color: #000;
       color: #fff;
@@ -21,14 +25,16 @@
       max-width: 360px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      align-items: stretch;
+      gap: 10px;
     }
     .title {
       text-align: center;
       font-size: 1.5rem;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .btn {
+      width: 100%;
       display: block;
       text-align: center;
       text-decoration: none;
@@ -40,6 +46,7 @@
       font-weight: 500;
       transition: opacity 0.2s ease, transform 0.1s ease;
       cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
     .btn:hover {
       opacity: 0.8;
@@ -72,18 +79,10 @@
     <!-- Sottolink Regionale -->
     <div id="regionale-links" class="hidden">
       <h2 class="title">Regionale</h2>
-      <a
-        href="https://www.canva.com/design/DAGqLAuqOVQ/qUOpCq-P6JzugZ2n6Ysm6g/edit?utm_content=DAGqLAuqOVQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-        target="_blank"
-        class="btn"
-      >
-        Business Plan (PDF)
+      <a href="https://www.canva.com/design/DAGqLAuqOVQ/qUOpCq-P6JzugZ2n6Ysm6g/edit?utm_content=DAGqLAuqOVQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn">
+        Business Plan
       </a>
-      <a
-        href="https://docs.google.com/spreadsheets/d/1jKv_LxKH1bccRaTzIKfdLzu0zYNocjxIN5O8WfAwitg/edit?usp=sharing"
-        target="_blank"
-        class="btn"
-      >
+      <a href="https://docs.google.com/spreadsheets/d/1jKv_LxKH1bccRaTzIKfdLzu0zYNocjxIN5O8WfAwitg/edit?usp=sharing" target="_blank" class="btn">
         File Excel
       </a>
       <button class="btn" onclick="goBack()">⬅ Torna indietro</button>
@@ -92,18 +91,10 @@
     <!-- Sottolink Dacia Bigster -->
     <div id="dacia-links" class="hidden">
       <h2 class="title">Dacia Bigster</h2>
-      <a
-        href="https://www.canva.com/design/DAGoMwPR7E8/sAAsY7x65dmlobt9uFAWhQ/edit?utm_content=DAGoMwPR7E8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-        target="_blank"
-        class="btn"
-      >
-        Business Plan (PDF)
+      <a href="https://www.canva.com/design/DAGoMwPR7E8/sAAsY7x65dmlobt9uFAWhQ/edit?utm_content=DAGoMwPR7E8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn">
+        Business Plan
       </a>
-      <a
-        href="https://docs.google.com/spreadsheets/d/1r62PvnoRhGzN4e24IrknbAXmpUkScojOFVTy6eTyLyk/edit?usp=sharing"
-        target="_blank"
-        class="btn"
-      >
+      <a href="https://docs.google.com/spreadsheets/d/1r62PvnoRhGzN4e24IrknbAXmpUkScojOFVTy6eTyLyk/edit?usp=sharing" target="_blank" class="btn">
         File Excel
       </a>
       <button class="btn" onclick="goBack()">⬅ Torna indietro</button>
